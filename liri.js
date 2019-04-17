@@ -2,7 +2,6 @@
 require("dotenv").config();
 //Import keys.js
 var keys = require("./keys.js");
-var spotify = new Spotify(keys.spotify);
 var Spotify = require("node-spotify-api")
 var moment = require("moment");
 var keys = require("./keys");
@@ -10,6 +9,7 @@ var request = require("request");
 var axios = require("axios");
 var fs = require("fs");
 var search = process.argv.slice(3).join(" ");
+var spotify = new Spotify(keys.spotify);
 
 
 //Incorporate "axios" npm package
